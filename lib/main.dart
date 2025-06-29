@@ -42,7 +42,7 @@ class _LocationScreenState extends State<LocationScreen> {
             "${place.name}, ${place.street}, ${place.locality}, ${place.administrativeArea}, ${place.country}";
 
         setState(() {
-          location = "📌 $fullAddress\n\n📍 (${position.latitude}, ${position.longitude})";
+          location = " $fullAddress\n\n (${position.latitude}, ${position.longitude})";
         });
       } else {
         setState(() {
@@ -57,7 +57,7 @@ class _LocationScreenState extends State<LocationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("📍 Get Location & Address")),
+      appBar: AppBar(title: Text(" Get Location & Address")),
       body: Center(
         child: Padding(
           padding: EdgeInsets.all(20),
